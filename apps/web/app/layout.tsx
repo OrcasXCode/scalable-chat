@@ -26,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SocketProvider>
-      
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          {children}
+        </body>
       </SocketProvider>
     </html>
   );
